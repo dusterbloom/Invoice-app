@@ -7,7 +7,6 @@ interface BottomBarProps {
   status: string
   handleModal: () => void
   setPaid: () => void
-  setClearing: () => void
 }
 
 export const BottomBar = (props: BottomBarProps) => {
@@ -42,15 +41,6 @@ export const BottomBar = (props: BottomBarProps) => {
           func={setPaid}
         >
           Mark as paid
-        </PurpleButton>
-      )}
-      
-       {status === 'pending' && (
-        <YellowButton
-          type="button"
-          func={setClearing}
-        >
-          Mark as clearing
         </PurpleButton>
       )}
     </BottomBarContainer>
