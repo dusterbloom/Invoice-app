@@ -43,6 +43,15 @@ export const BottomBar = (props: BottomBarProps) => {
           Mark as paid
         </PurpleButton>
       )}
+      
+       {status === 'pending' && (
+        <YellowButton
+          type="button"
+          func={setClearing}
+        >
+          Mark as clearing
+        </PurpleButton>
+      )}
     </BottomBarContainer>
   )
 }
