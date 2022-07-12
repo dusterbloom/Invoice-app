@@ -7,6 +7,7 @@ interface BottomBarProps {
   status: string
   handleModal: () => void
   setPaid: () => void
+  setClearing: () => void
 }
 
 export const BottomBar = (props: BottomBarProps) => {
